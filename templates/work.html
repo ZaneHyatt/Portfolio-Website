@@ -1,0 +1,55 @@
+{% include "header.html" %}
+<div class="container border-bottom border-white">
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold ">Portfolio</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">These are some projects that I have worked on recently. Want to see more? <a style="color:#F2D8D8;" href="/contact">Email me</a> </p>
+    </div>
+  </div>
+
+<a href="https://github.com/ZaneHyatt/street-art-chat-app/tree/main" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+<div class="container my-5">
+  <div class="p-5 text-center rounded-3 work-1 work">
+    <h1>Street Art Chat Bot</h1>
+    <p class="lead">
+      Simple chatbot web app that will locate the 5 best areas for street art given any location or even neighborhood. Created with the <code>OpenAI API</code> and <code>Gradio</code>.
+    </p>
+  </div>
+</div>
+</a>
+
+
+<a href="https://github.com/ZaneHyatt/Zane-blog" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+<div class="container my-5">
+  <div class="p-5 text-center rounded-3 work-2 work">
+    <h1>Dream Journal Blog</h1>
+    <p class="lead">
+      A webpage dedicated to dream Journaling and documenting the subconscious world. Made using <code>Flask</code> and <code>Bootstrap</code>.
+    </p>
+  </div>
+</div>
+</a>
+
+<a href="https://github.com/ZaneHyatt/Automated-Flappy-Bird" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+<div class="container my-5">
+  <div class="p-5 text-center rounded-3 work-3 work">
+    <h1>Automated Game using Neural Networks</h1>
+    <p class="lead">
+      Automated flappy bird game, powered by neural networks and neuroevolution. It combines the principles of neural networks and evolutionary computation. Made with the <code>NEAT algorithm</code> and <code>Pygame</code>.
+    </p>
+  </div>
+</div>
+</a>
+
+<a href="{{ url_for('chat_bot') }}" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+<div class="container my-5">
+  <div class="p-5 text-center rounded-3 work-4 work">
+    <h1>Zane Chat Bot</h1>
+    <p class="lead">
+      Chat-bot made to emulate me and how I would respond to any given question. Created with the <code>NLTK library</code>, <code>Numpy</code> and the <code>TensorFlow framework</code>.
+    </p>
+  </div>
+</div>
+</a>
+</div>
+{% include "footer.html" %}

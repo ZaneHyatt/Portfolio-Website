@@ -1,0 +1,39 @@
+{% include "header.html" %}
+  <header class="masthead-chat-bot">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h2 class="display-5 fw-bold lh-1 m-3 mt-5">Zane Chat Bot</h2>
+            <p class="subheading m-3">Have any questions? Talk to my chatbot. He is pretty much just me but a bot!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <div class="container mt-5 mb-5 border-bottom border-white">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+        <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+        <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+        <form name="sentMessage" id="chat_bot" action="{{ url_for('chat_bot') }}" method="post" novalidate>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <input rows="5" name="message" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></input>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-light" id="sendMessageButton">Send</button>
+        </form>
+        <div class="container pt-5 pb-4">
+          <p><tt>{{ message }}</tt></p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% include "footer.html" %}
