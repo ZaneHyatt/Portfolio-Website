@@ -8,7 +8,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 OWN_EMAIL = os.getenv("PW_EMAIL")
+print(OWN_EMAIL)
 OWN_PASSWORD = os.getenv("PW_PASSWORD")
+print(OWN_PASSWORD)
 
 app = Flask(__name__)
 app.secret_key = os.getenv("PW_SECRET_KEY")
