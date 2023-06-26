@@ -5,4 +5,4 @@ tflearn~=0.5.0
 tensorflow~=2.11.0
 Flask==1.1.2
 psycopg2-binary~=2.9.6
-python-dotenv~=1.0.0
+python-dotenv~=0.21.1
